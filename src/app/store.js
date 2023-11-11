@@ -1,8 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-
+import { configureStore } from "@reduxjs/toolkit";
+import assessorReducer from '../features/assessors/assessorSlice'
+import centerReducer from '../features/center/centerSlice'
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    assessors: assessorReducer,
+    centers: centerReducer,
   },
 });
